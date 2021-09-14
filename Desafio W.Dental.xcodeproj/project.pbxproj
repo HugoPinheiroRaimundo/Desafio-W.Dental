@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		45EBD34E1841028397F0D524 /* Pods_Desafio_W_Dental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE373EA0672B894E3C48F684 /* Pods_Desafio_W_Dental.framework */; };
+		4754ED8D26EFAA0F00F84963 /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = 4754ED8C26EFAA0F00F84963 /* Montserrat */; };
+		47F7D43B26EF91D500BC594B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7D43A26EF91D500BC594B /* AppDelegate.swift */; };
+		47F7D43D26EF91D500BC594B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7D43C26EF91D500BC594B /* SceneDelegate.swift */; };
+		47F7D43F26EF91D500BC594B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7D43E26EF91D500BC594B /* ViewController.swift */; };
+		47F7D44226EF91D500BC594B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F7D44026EF91D500BC594B /* Main.storyboard */; };
+		47F7D44426EF91D600BC594B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47F7D44326EF91D600BC594B /* Assets.xcassets */; };
+		47F7D44726EF91D600BC594B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47F7D44526EF91D600BC594B /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11D7E816B0F62C4008BAD4EB /* Pods-Desafio W.Dental.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio W.Dental.release.xcconfig"; path = "Target Support Files/Pods-Desafio W.Dental/Pods-Desafio W.Dental.release.xcconfig"; sourceTree = "<group>"; };
+		4754ED8C26EFAA0F00F84963 /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Montserrat; sourceTree = "<group>"; };
+		47F7D43726EF91D500BC594B /* Desafio W.Dental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio W.Dental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47F7D43A26EF91D500BC594B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		47F7D43C26EF91D500BC594B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		47F7D43E26EF91D500BC594B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		47F7D44126EF91D500BC594B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		47F7D44326EF91D600BC594B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		47F7D44626EF91D600BC594B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		47F7D44826EF91D600BC594B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DAA663674AE728BE2DF04C7F /* Pods-Desafio W.Dental.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio W.Dental.debug.xcconfig"; path = "Target Support Files/Pods-Desafio W.Dental/Pods-Desafio W.Dental.debug.xcconfig"; sourceTree = "<group>"; };
+		DE373EA0672B894E3C48F684 /* Pods_Desafio_W_Dental.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Desafio_W_Dental.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		47F7D43426EF91D500BC594B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45EBD34E1841028397F0D524 /* Pods_Desafio_W_Dental.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1DE87504F5BF1D4F202127F3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAA663674AE728BE2DF04C7F /* Pods-Desafio W.Dental.debug.xcconfig */,
+				11D7E816B0F62C4008BAD4EB /* Pods-Desafio W.Dental.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		33BDA1A07125AB26F5037B8C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE373EA0672B894E3C48F684 /* Pods_Desafio_W_Dental.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		47F7D42E26EF91D500BC594B = {
+			isa = PBXGroup;
+			children = (
+				47F7D43926EF91D500BC594B /* Desafio W.Dental */,
+				47F7D43826EF91D500BC594B /* Products */,
+				1DE87504F5BF1D4F202127F3 /* Pods */,
+				33BDA1A07125AB26F5037B8C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		47F7D43826EF91D500BC594B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				47F7D43726EF91D500BC594B /* Desafio W.Dental.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47F7D43926EF91D500BC594B /* Desafio W.Dental */ = {
+			isa = PBXGroup;
+			children = (
+				47F7D43A26EF91D500BC594B /* AppDelegate.swift */,
+				47F7D43C26EF91D500BC594B /* SceneDelegate.swift */,
+				47F7D43E26EF91D500BC594B /* ViewController.swift */,
+				47F7D44026EF91D500BC594B /* Main.storyboard */,
+				47F7D44326EF91D600BC594B /* Assets.xcassets */,
+				4754ED8C26EFAA0F00F84963 /* Montserrat */,
+				47F7D44526EF91D600BC594B /* LaunchScreen.storyboard */,
+				47F7D44826EF91D600BC594B /* Info.plist */,
+			);
+			path = "Desafio W.Dental";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		47F7D43626EF91D500BC594B /* Desafio W.Dental */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47F7D44B26EF91D600BC594B /* Build configuration list for PBXNativeTarget "Desafio W.Dental" */;
+			buildPhases = (
+				1433381753E78FD7BDB4537A /* [CP] Check Pods Manifest.lock */,
+				47F7D43326EF91D500BC594B /* Sources */,
+				47F7D43426EF91D500BC594B /* Frameworks */,
+				47F7D43526EF91D500BC594B /* Resources */,
+				B6C432B70FC78B076CC46D57 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Desafio W.Dental";
+			productName = "Desafio W.Dental";
+			productReference = 47F7D43726EF91D500BC594B /* Desafio W.Dental.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		47F7D42F26EF91D500BC594B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					47F7D43626EF91D500BC594B = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = 47F7D43226EF91D500BC594B /* Build configuration list for PBXProject "Desafio W.Dental" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 47F7D42E26EF91D500BC594B;
+			productRefGroup = 47F7D43826EF91D500BC594B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				47F7D43626EF91D500BC594B /* Desafio W.Dental */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		47F7D43526EF91D500BC594B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F7D44726EF91D600BC594B /* LaunchScreen.storyboard in Resources */,
+				4754ED8D26EFAA0F00F84963 /* Montserrat in Resources */,
+				47F7D44426EF91D600BC594B /* Assets.xcassets in Resources */,
+				47F7D44226EF91D500BC594B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1433381753E78FD7BDB4537A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Desafio W.Dental-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6C432B70FC78B076CC46D57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Desafio W.Dental/Pods-Desafio W.Dental-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Desafio W.Dental/Pods-Desafio W.Dental-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Desafio W.Dental/Pods-Desafio W.Dental-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		47F7D43326EF91D500BC594B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47F7D43F26EF91D500BC594B /* ViewController.swift in Sources */,
+				47F7D43B26EF91D500BC594B /* AppDelegate.swift in Sources */,
+				47F7D43D26EF91D500BC594B /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		47F7D44026EF91D500BC594B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47F7D44126EF91D500BC594B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		47F7D44526EF91D600BC594B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47F7D44626EF91D600BC594B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		47F7D44926EF91D600BC594B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		47F7D44A26EF91D600BC594B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		47F7D44C26EF91D600BC594B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAA663674AE728BE2DF04C7F /* Pods-Desafio W.Dental.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63HBQXT46P;
+				INFOPLIST_FILE = "Desafio W.Dental/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.hugopinheiro.Desafio-W-Dental";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		47F7D44D26EF91D600BC594B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11D7E816B0F62C4008BAD4EB /* Pods-Desafio W.Dental.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63HBQXT46P;
+				INFOPLIST_FILE = "Desafio W.Dental/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.br.hugopinheiro.Desafio-W-Dental";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		47F7D43226EF91D500BC594B /* Build configuration list for PBXProject "Desafio W.Dental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47F7D44926EF91D600BC594B /* Debug */,
+				47F7D44A26EF91D600BC594B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		47F7D44B26EF91D600BC594B /* Build configuration list for PBXNativeTarget "Desafio W.Dental" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47F7D44C26EF91D600BC594B /* Debug */,
+				47F7D44D26EF91D600BC594B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 47F7D42F26EF91D500BC594B /* Project object */;
+}
