@@ -61,6 +61,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		47B89CF326F13A05008494D9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		47B89CF426F13A10008494D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				47F7D44026EF91D500BC594B /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		47B89CF526F13A17008494D9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				47F7D43E26EF91D500BC594B /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		47F7D42E26EF91D500BC594B = {
 			isa = PBXGroup;
 			children = (
@@ -84,8 +107,9 @@
 			children = (
 				47F7D43A26EF91D500BC594B /* AppDelegate.swift */,
 				47F7D43C26EF91D500BC594B /* SceneDelegate.swift */,
-				47F7D43E26EF91D500BC594B /* ViewController.swift */,
-				47F7D44026EF91D500BC594B /* Main.storyboard */,
+				47B89CF526F13A17008494D9 /* Controller */,
+				47B89CF426F13A10008494D9 /* View */,
+				47B89CF326F13A05008494D9 /* Model */,
 				47F7D44326EF91D600BC594B /* Assets.xcassets */,
 				4754ED8C26EFAA0F00F84963 /* Montserrat */,
 				47F7D44526EF91D600BC594B /* LaunchScreen.storyboard */,
