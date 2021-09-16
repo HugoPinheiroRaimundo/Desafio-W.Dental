@@ -14,6 +14,17 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var tfSeuCPF: UITextField!
     @IBOutlet weak var tfSenha: UITextField!
+    
+    
+    @IBOutlet weak var ivVistoCPF: UIImageView!
+    @IBOutlet weak var ivVistoSenha: UIImageView!
+    
+    
+   
+    @IBOutlet weak var lbSenha: UILabel!
+    @IBOutlet weak var lbCpf: UILabel!
+    
+    @IBOutlet weak var btEsqueceuSenha: UIButton!
     @IBOutlet weak var btEntrar: UIButton!
     @IBOutlet weak var btPrimeiroAcesso: UIButton!
     @IBOutlet weak var btContrateAgora: UIButton!
@@ -55,6 +66,73 @@ class ViewController: UIViewController {
            view.endEditing(true)
        }
     
+        @IBAction func esqueciSenhaFecharCPF(_ sender: UITextField) {
+    
+            if tfSenha.text?.isEmpty == false {
+                btEsqueceuSenha.isHidden = true
+                    lbSenha.isHidden = false
+                }
+                else {
+                    btEsqueceuSenha.isHidden = false
+                    ivVistoSenha.image = UIImage?(nil)
+                    lbSenha.isHidden = true
+                }
+            if tfSeuCPF.text?.isEmpty == false {
+                lbCpf.isHidden = false
+            }
+            else {
+                ivVistoCPF.image = UIImage?(nil)
+                lbCpf.isHidden = true
+            }
+            
+            if let selectedRange = tfSeuCPF.selectedTextRange {
 
+                let cursorPosition = tfSeuCPF.offset(from: tfSeuCPF.beginningOfDocument, to: selectedRange.start)
+                
+                var appendString = ""
+                
+                switch cursorPosition {
+                case 3:
+                    appendString = "."
+                case 7:
+                    appendString = "."
+                case 11:
+                    appendString = "-"
+                default:
+                    break
+                }
+                
+                tfSeuCPF.text?.append(appendString)
+                
+                if (tfSeuCPF.text?.count)! == 14{
+                    tfSeuCPF.isEnabled = false
+                    tfSeuCPF.isEnabled = true
+                }
+            }
+            
+        }
+    
+    
+    
+    @IBAction func limpaCpf(_ sender: UITextField) {
+        
+            if tfSeuCPF.text?.isEmpty == false {
+                tfSeuCPF.text = nil
+            }
+    }
+    
+    
+        @IBAction func vistoCPFSenha(_ sender: UITextField) {
+    
+            if tfSeuCPF.text?.isEmpty == false {
+                ivVistoCPF.image = UIImage(named: "ok")
+                lbCpf.isHidden = false
+            }
+    
+            if tfSenha.text?.isEmpty == false {
+                ivVistoSenha.image = UIImage(named: "ok")
+                lbSenha.isHidden = false
+            }
+        }
 }
 
