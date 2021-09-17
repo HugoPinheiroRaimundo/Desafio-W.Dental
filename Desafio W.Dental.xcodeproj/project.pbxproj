@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		45EBD34E1841028397F0D524 /* Pods_Desafio_W_Dental.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE373EA0672B894E3C48F684 /* Pods_Desafio_W_Dental.framework */; };
 		4754ED8D26EFAA0F00F84963 /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = 4754ED8C26EFAA0F00F84963 /* Montserrat */; };
+		4762614E26F3B0D000E1FE48 /* firstAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762614D26F3B0D000E1FE48 /* firstAccess.swift */; };
 		47F7D43B26EF91D500BC594B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7D43A26EF91D500BC594B /* AppDelegate.swift */; };
 		47F7D43D26EF91D500BC594B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7D43C26EF91D500BC594B /* SceneDelegate.swift */; };
 		47F7D43F26EF91D500BC594B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7D43E26EF91D500BC594B /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		11D7E816B0F62C4008BAD4EB /* Pods-Desafio W.Dental.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Desafio W.Dental.release.xcconfig"; path = "Target Support Files/Pods-Desafio W.Dental/Pods-Desafio W.Dental.release.xcconfig"; sourceTree = "<group>"; };
 		4754ED8C26EFAA0F00F84963 /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Montserrat; sourceTree = "<group>"; };
+		4762614D26F3B0D000E1FE48 /* firstAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstAccess.swift; sourceTree = "<group>"; };
 		47F7D43726EF91D500BC594B /* Desafio W.Dental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio W.Dental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F7D43A26EF91D500BC594B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47F7D43C26EF91D500BC594B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 			isa = PBXGroup;
 			children = (
 				47F7D43E26EF91D500BC594B /* ViewController.swift */,
+				4762614D26F3B0D000E1FE48 /* firstAccess.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 			files = (
 				47F7D43F26EF91D500BC594B /* ViewController.swift in Sources */,
 				47F7D43B26EF91D500BC594B /* AppDelegate.swift in Sources */,
+				4762614E26F3B0D000E1FE48 /* firstAccess.swift in Sources */,
 				47F7D43D26EF91D500BC594B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
