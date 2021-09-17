@@ -76,8 +76,8 @@
 		47B89CF526F13A17008494D9 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				47F7D43E26EF91D500BC594B /* ViewController.swift */,
 				4762614D26F3B0D000E1FE48 /* firstAccess.swift */,
+				47F7D43E26EF91D500BC594B /* ViewController.swift */,
 				47AA81BA26F4BA50009EBEE5 /* ResetPassword.swift */,
 			);
 			path = Controller;
