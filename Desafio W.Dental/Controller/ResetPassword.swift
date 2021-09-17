@@ -75,7 +75,28 @@ class ResetPassword: UIViewController {
         }
         
     }
+    
+    @IBAction func limpaCpf(_ sender: UITextField) {
+        
+            if tfSeuCpf.text?.isEmpty == false {
+                tfSeuCpf.text = nil
+            }
+    }
+    
+    
+        @IBAction func vistoCPFSenha(_ sender: UITextField) {
+    
+            if tfSeuCpf.text?.isEmpty == false {
+                ivVistoSeuCPF.image = UIImage(named: "ok")
+                lbCpf.isHidden = false
+            }
+    
+            if tfDataNascimento.text?.isEmpty == false {
+                ivDataNascimento.image = UIImage(named: "ok")
+                lbDataNascimento.isHidden = false
+            }
+        }
+}
 
     
     
-}
