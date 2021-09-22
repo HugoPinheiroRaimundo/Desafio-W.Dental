@@ -7,6 +7,6 @@ target 'Desafio W.Dental' do
 
   # Pods for Desafio W.Dental
 
-pod 'Alamofire', '~> 5.4'
+pod 'Alamofire', '~> 4.7'
 
 end
