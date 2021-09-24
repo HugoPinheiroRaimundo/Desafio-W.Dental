@@ -13,7 +13,11 @@
 		474A216826F902AB00B0742F /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 474A216726F902AB00B0742F /* LoginViewModel.swift */; };
 		4754ED8D26EFAA0F00F84963 /* Montserrat in Resources */ = {isa = PBXBuildFile; fileRef = 4754ED8C26EFAA0F00F84963 /* Montserrat */; };
 		4762614E26F3B0D000E1FE48 /* firstAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762614D26F3B0D000E1FE48 /* firstAccess.swift */; };
+		477E13E726FDFF6D003F2769 /* RecoverPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477E13E626FDFF6D003F2769 /* RecoverPasswordViewModel.swift */; };
+		477E13E926FE00B3003F2769 /* Reset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 477E13E826FE00B3003F2769 /* Reset.swift */; };
 		47AA81BB26F4BA50009EBEE5 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AA81BA26F4BA50009EBEE5 /* ResetPassword.swift */; };
+		47B2F84126FD245900E5BE66 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B2F84026FD245900E5BE66 /* Register.swift */; };
+		47B2F84326FD288200E5BE66 /* ResgisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B2F84226FD288200E5BE66 /* ResgisterViewModel.swift */; };
 		47CA097B26FBCA6B0042E04A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CA097A26FBCA6B0042E04A /* Main.storyboard */; };
 		47E50B0C26FCC3C400D0C251 /* homeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E50B0B26FCC3C400D0C251 /* homeScreen.swift */; };
 		47F7D43B26EF91D500BC594B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7D43A26EF91D500BC594B /* AppDelegate.swift */; };
@@ -30,7 +34,11 @@
 		474A216726F902AB00B0742F /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4754ED8C26EFAA0F00F84963 /* Montserrat */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Montserrat; sourceTree = "<group>"; };
 		4762614D26F3B0D000E1FE48 /* firstAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstAccess.swift; sourceTree = "<group>"; };
+		477E13E626FDFF6D003F2769 /* RecoverPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecoverPasswordViewModel.swift; sourceTree = "<group>"; };
+		477E13E826FE00B3003F2769 /* Reset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reset.swift; sourceTree = "<group>"; };
 		47AA81BA26F4BA50009EBEE5 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
+		47B2F84026FD245900E5BE66 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		47B2F84226FD288200E5BE66 /* ResgisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResgisterViewModel.swift; sourceTree = "<group>"; };
 		47CA097A26FBCA6B0042E04A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		47E50B0B26FCC3C400D0C251 /* homeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreen.swift; sourceTree = "<group>"; };
 		47F7D43726EF91D500BC594B /* Desafio W.Dental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio W.Dental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				474A216526F8FD4A00B0742F /* Login.swift */,
+				47B2F84026FD245900E5BE66 /* Register.swift */,
+				477E13E826FE00B3003F2769 /* Reset.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -102,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				474A216726F902AB00B0742F /* LoginViewModel.swift */,
+				47B2F84226FD288200E5BE66 /* ResgisterViewModel.swift */,
+				477E13E626FDFF6D003F2769 /* RecoverPasswordViewModel.swift */,
 			);
 			path = "view model";
 			sourceTree = "<group>";
@@ -279,10 +291,14 @@
 				47F7D43F26EF91D500BC594B /* LoginScreen.swift in Sources */,
 				474A216426F8FD2100B0742F /* dataService.swift in Sources */,
 				47F7D43B26EF91D500BC594B /* AppDelegate.swift in Sources */,
+				47B2F84126FD245900E5BE66 /* Register.swift in Sources */,
 				47AA81BB26F4BA50009EBEE5 /* ResetPassword.swift in Sources */,
+				477E13E726FDFF6D003F2769 /* RecoverPasswordViewModel.swift in Sources */,
 				474A216826F902AB00B0742F /* LoginViewModel.swift in Sources */,
 				4762614E26F3B0D000E1FE48 /* firstAccess.swift in Sources */,
+				47B2F84326FD288200E5BE66 /* ResgisterViewModel.swift in Sources */,
 				474A216626F8FD4A00B0742F /* Login.swift in Sources */,
+				477E13E926FE00B3003F2769 /* Reset.swift in Sources */,
 				47F7D43D26EF91D500BC594B /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
