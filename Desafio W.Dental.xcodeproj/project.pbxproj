@@ -15,6 +15,7 @@
 		4762614E26F3B0D000E1FE48 /* firstAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4762614D26F3B0D000E1FE48 /* firstAccess.swift */; };
 		47AA81BB26F4BA50009EBEE5 /* ResetPassword.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47AA81BA26F4BA50009EBEE5 /* ResetPassword.swift */; };
 		47CA097B26FBCA6B0042E04A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47CA097A26FBCA6B0042E04A /* Main.storyboard */; };
+		47E50B0C26FCC3C400D0C251 /* homeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E50B0B26FCC3C400D0C251 /* homeScreen.swift */; };
 		47F7D43B26EF91D500BC594B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7D43A26EF91D500BC594B /* AppDelegate.swift */; };
 		47F7D43D26EF91D500BC594B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7D43C26EF91D500BC594B /* SceneDelegate.swift */; };
 		47F7D43F26EF91D500BC594B /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47F7D43E26EF91D500BC594B /* LoginScreen.swift */; };
@@ -31,6 +32,7 @@
 		4762614D26F3B0D000E1FE48 /* firstAccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = firstAccess.swift; sourceTree = "<group>"; };
 		47AA81BA26F4BA50009EBEE5 /* ResetPassword.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPassword.swift; sourceTree = "<group>"; };
 		47CA097A26FBCA6B0042E04A /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		47E50B0B26FCC3C400D0C251 /* homeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeScreen.swift; sourceTree = "<group>"; };
 		47F7D43726EF91D500BC594B /* Desafio W.Dental.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Desafio W.Dental.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47F7D43A26EF91D500BC594B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47F7D43C26EF91D500BC594B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				4762614D26F3B0D000E1FE48 /* firstAccess.swift */,
 				47F7D43E26EF91D500BC594B /* LoginScreen.swift */,
 				47AA81BA26F4BA50009EBEE5 /* ResetPassword.swift */,
+				47E50B0B26FCC3C400D0C251 /* homeScreen.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E50B0C26FCC3C400D0C251 /* homeScreen.swift in Sources */,
 				47F7D43F26EF91D500BC594B /* LoginScreen.swift in Sources */,
 				474A216426F8FD2100B0742F /* dataService.swift in Sources */,
 				47F7D43B26EF91D500BC594B /* AppDelegate.swift in Sources */,
