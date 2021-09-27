@@ -33,9 +33,14 @@ class FirstAcess: UIViewController {
     @IBOutlet weak var ivConfirmeEmail: UIImageView!
     @IBOutlet weak var ivSenha: UIImageView!
     @IBOutlet weak var ivConfirmeSenha: UIImageView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
     
     
+    
+    // MARK: - Injection
+    let viewModel = RegisterViewModel(dataService: DataService())
+    let service = DataService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +56,44 @@ class FirstAcess: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
            view.endEditing(true)
        }
+
+    // MARK: - Networking
+    
+    private func attempFeatchRegister(withId id: Int) {
+        
+        viewModel.fetchRegister(withId: id)
+        
+        viewModel.updateLoadingStatus = {
+            let _ = self.viewModel.isLoading ? self.activityIndicatorStart() : self.activityIndicatorStop()
+        }
+        viewModel.showAlertClosure = {
+            if let error = self.viewModel.error {
+            print(error.localizedDescription)
+                    }
+                 }
+        viewModel.didFinishFetch = {
+            print(self.viewModel.name!)
+            print(self.viewModel.email!)
+            print(self.viewModel.body!)
+        }
+    }
+
+    // MARK: - UI Setup
+    private func activityIndicatorStart() {
+        activityIndicator.startAnimating()
+        print("start")
+    }
+    
+    private func activityIndicatorStop() {
+        performSegue(withIdentifier: "successfulSegue2", sender: nil)
+        print("stop")
+    }
+    
+    
+    @IBAction func actionLogin(_ sender: UIButton) {
+        attempFeatchRegister(withId: 1)
+    }
+    
     
     @IBAction func changedTextFields(_ sender: UITextField) {
             

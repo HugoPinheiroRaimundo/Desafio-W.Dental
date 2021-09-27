@@ -1,138 +1,172 @@
 //
-//  ViewController.swift
-//  Desafio W.Dental
+//  WDentalViewController.swift
+//  WDental
 //
-//  Created by Hugo Pinheiro on 13/09/21.
+//  Created by Sidraque on 14/09/21.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate{
+
     
-   // MARK: - IBOutlet
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var tfCpf: UITextField!{
+        didSet{
+            tfCpf.layer.borderColor = UIColor(red: 0.73, green: 0.73, blue: 0.73, alpha: 1.00).cgColor
+            tfCpf.layer.borderWidth = 1
+        }
+    }
+    @IBOutlet weak var tfPassword: UITextField!{
+        didSet{
+            tfPassword.layer.borderColor = UIColor(red: 0.73, green: 0.73, blue: 0.73, alpha: 1.00).cgColor
+            tfPassword.layer.borderWidth = 1
+        }
+    }
+    @IBOutlet weak var btForgotPassword: UIButton!
+    @IBOutlet weak var btToEnter: UIButton!
+    @IBOutlet weak var btFirstAccess: UIButton!{
+        didSet{
+            btFirstAccess.layer.borderColor = UIColor(red: 0.07, green: 0.10, blue: 0.24, alpha: 1.00).cgColor
+            btFirstAccess.layer.borderWidth = 1
+            btFirstAccess.layer.cornerRadius = 10
+        }
+    }
+    @IBOutlet weak var btHireNow: UIButton!{
+        didSet{
+            btHireNow.layer.borderColor = UIColor(red: 0.07, green: 0.10, blue: 0.24, alpha: 1.00).cgColor
+            btHireNow.layer.borderWidth = 1
+            btHireNow.layer.cornerRadius = 10
+        }
+    }
+
+    @IBOutlet weak var ivCheckCpf: UIImageView!
+    @IBOutlet weak var ivCheckPassword: UIImageView!
+
+    @IBOutlet weak var lbCPF: UILabel!
+    @IBOutlet weak var lbPassword: UILabel!
     
+    // MARK: - Injection
+    let viewModel = LoginViewModel(dataService: DataService())
+    let service = DataService()
     
-    @IBOutlet weak var tfSeuCPF: UITextField!
-    @IBOutlet weak var tfSenha: UITextField!
-    
-    
-    @IBOutlet weak var ivVistoCPF: UIImageView!
-    @IBOutlet weak var ivVistoSenha: UIImageView!
-    
-    
-   
-    @IBOutlet weak var lbSenha: UILabel!
-    @IBOutlet weak var lbCpf: UILabel!
-    
-    @IBOutlet weak var btEsqueceuSenha: UIButton!
-    @IBOutlet weak var btEntrar: UIButton!
-    @IBOutlet weak var btPrimeiroAcesso: UIButton!
-    @IBOutlet weak var btContrateAgora: UIButton!
-    
-    
-    // MARK: - View life cicle
+    // MARK: - View life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-      
-        // MARK: - Style Buttons
-        btEntrar.layer.cornerRadius = 20.0
-        
-        btPrimeiroAcesso.layer.cornerRadius = 10.0
-        btPrimeiroAcesso.layer.borderWidth = 1
-        btPrimeiroAcesso.layer.borderColor = UIColor(red: 0.12, green: 0.34, blue: 0.56, alpha: 1.00).cgColor
-        
-        
-        btContrateAgora.layer.cornerRadius = 10.0
-        btContrateAgora.layer.borderWidth = 1
-        btContrateAgora.layer.borderColor = UIColor(red: 0.12, green: 0.34, blue: 0.56, alpha: 1.00).cgColor
-     
-
-    // MARK: - Style TextField
-        tfSenha.layer.borderColor = UIColor(red: 0.73, green: 0.73, blue: 0.73, alpha: 1.00).cgColor
-        tfSenha.layer.masksToBounds = true
-        tfSenha.layer.cornerRadius = 3.0
-        
-      
-        tfSeuCPF.layer.borderColor = UIColor(red: 0.73, green: 0.73, blue: 0.73, alpha: 1.00).cgColor
-        tfSeuCPF.layer.masksToBounds = true
-        tfSeuCPF.layer.cornerRadius = 3.0
-
-        
+        activityIndicator.hidesWhenStopped = true
     }
-    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-           view.endEditing(true)
-       }
+        view.endEditing(true)
+    }
     
-        @IBAction func esqueciSenhaFecharCPF(_ sender: UITextField) {
+    // MARK: - Networking
     
-            if tfSenha.text?.isEmpty == false {
-                btEsqueceuSenha.isHidden = true
-                    lbSenha.isHidden = false
-                }
-                else {
-                    btEsqueceuSenha.isHidden = false
-                    ivVistoSenha.image = UIImage?(nil)
-                    lbSenha.isHidden = true
-                }
-            if tfSeuCPF.text?.isEmpty == false {
-                lbCpf.isHidden = false
-            }
-            else {
-                ivVistoCPF.image = UIImage?(nil)
-                lbCpf.isHidden = true
-            }
-            
-            if let selectedRange = tfSeuCPF.selectedTextRange {
-
-                let cursorPosition = tfSeuCPF.offset(from: tfSeuCPF.beginningOfDocument, to: selectedRange.start)
-                
-                var appendString = ""
-                
-                switch cursorPosition {
-                case 3:
-                    appendString = "."
-                case 7:
-                    appendString = "."
-                case 11:
-                    appendString = "-"
-                default:
-                    break
-                }
-                
-                tfSeuCPF.text?.append(appendString)
-                
-                if (tfSeuCPF.text?.count)! == 14{
-                    tfSeuCPF.isEnabled = false
-                    tfSeuCPF.isEnabled = true
-                }
-            }
-            
-        }
-    
-    
-    
-    @IBAction func limpaCpf(_ sender: UITextField) {
-        
-            if tfSeuCPF.text?.isEmpty == false {
-                tfSeuCPF.text = nil
-            }
+    private func attemptFetchLogin(withId id: Int) {
+          viewModel.fetchLogin(withId: id)
+          
+          viewModel.updateLoadingStatus = {
+              let _ = self.viewModel.isLoading ? self.activityIndicatorStart() : self.activityIndicatorStop()
+          }
+          
+          viewModel.showAlertClosure = {
+              if let error = self.viewModel.error {
+                  print(error.localizedDescription)
+              }
+          }
+          
+          viewModel.didFinishFetch = {
+            print(self.viewModel.userID!)
+            print(self.viewModel.title!)
+            print(self.viewModel.body!)
+          }
     }
     
     
-        @IBAction func vistoCPFSenha(_ sender: UITextField) {
+    // MARK: - UI Setup
+    private func activityIndicatorStart() {
+        activityIndicator.startAnimating()
+        print("start")
+    }
     
-            if tfSeuCPF.text?.isEmpty == false {
-                ivVistoCPF.image = UIImage(named: "ok")
-                lbCpf.isHidden = false
+    private func activityIndicatorStop() {
+        performSegue(withIdentifier: "successfulSegue", sender: nil)
+        print("stop")
+    }
+    
+    
+    @IBAction func actionLogin(_ sender: UIButton) {
+        attemptFetchLogin(withId: 10)
+    }
+    
+    
+    
+
+    @IBAction func forgotPasswordAndCpfClose(_ sender: UITextField) {
+        if  tfPassword.text?.isEmpty == false {
+            btForgotPassword.isHidden = true
+            lbPassword.isHidden = false
+        }else{
+            btForgotPassword.isHidden = false
+            ivCheckPassword.image = UIImage?(nil)
+            lbPassword.isHidden = true
+        }
+
+        if  tfCpf.text?.isEmpty == false {
+            lbCPF.isHidden = false
+        }else{
+            ivCheckCpf.image = UIImage?(nil)
+            lbCPF.isHidden = true
+        }
+
+        if let selectedRange = tfCpf.selectedTextRange {
+
+            let cursorPosition = tfCpf.offset(from: tfCpf.beginningOfDocument, to: selectedRange.start)
+            
+            print ("\(cursorPosition)")
+
+            var appendString = ""
+
+            switch cursorPosition {
+            case 3:
+                appendString = "."
+            case 7:
+                appendString = "."
+            case 11:
+                appendString = "-"
+            default:
+                break
             }
-    
-            if tfSenha.text?.isEmpty == false {
-                ivVistoSenha.image = UIImage(named: "ok")
-                lbSenha.isHidden = false
+
+            tfCpf.text?.append(appendString)
+
+            if (tfCpf.text?.count)! == 14{
+                tfCpf.isEnabled = false
+                tfCpf.isEnabled = true
             }
         }
-}
 
+    }
+    
+    @IBAction func clearCpf(_ sender: UITextField) {
+        if  tfCpf.text?.isEmpty == false {
+            tfCpf.text = nil
+        }
+    }
+
+    @IBAction func checkPasswordCpf(_ sender: UITextField) {
+        if  tfPassword.text?.isEmpty == false {
+            ivCheckPassword.image = UIImage(named: "ok")
+            lbPassword.isHidden = false
+        }
+
+        if  tfCpf.text?.isEmpty == false {
+            ivCheckCpf.image = UIImage(named: "ok")
+            lbCPF.isHidden = false
+        }
+    }
+
+    
+    
+    
+    
+}
