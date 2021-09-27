@@ -139,8 +139,6 @@ class FirstAcess: UIViewController {
                 lbConfirmeSenha.isHidden = true
             }
         
-        
-        // mask CPF
         if let selectedRange = tfSeuCpf.selectedTextRange {
 
             let cursorPosition = tfSeuCpf.offset(from: tfSeuCpf.beginningOfDocument, to: selectedRange.start)
@@ -166,7 +164,6 @@ class FirstAcess: UIViewController {
             }
         }
         
-        // mask Data nascimento
         if let selectedRange2 = tfDataNascimento.selectedTextRange {
 
                     let cursorPosition = tfDataNascimento.offset(from: tfDataNascimento.beginningOfDocument, to: selectedRange2.start)

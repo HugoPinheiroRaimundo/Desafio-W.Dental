@@ -601,6 +601,11 @@
                                                 <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="beginCPF:" destination="V5k-21-Meb" eventType="editingDidBegin" id="hwq-so-AgO"/>
+                                                    <action selector="changedTextFields:" destination="V5k-21-Meb" eventType="editingChanged" id="lBe-fV-JIq"/>
+                                                    <action selector="vistoTodosEnd:" destination="V5k-21-Meb" eventType="editingDidEnd" id="QAL-SI-GiT"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Seu CPF" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kw5-tT-URl">
                                                 <rect key="frame" x="44" y="199" width="45" height="12"/>
@@ -622,6 +627,11 @@
                                                 <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                                <connections>
+                                                    <action selector="beginDataAniversario:" destination="V5k-21-Meb" eventType="editingDidBegin" id="ZCK-PH-0cw"/>
+                                                    <action selector="changedTextFields:" destination="V5k-21-Meb" eventType="editingChanged" id="96e-Nr-p6m"/>
+                                                    <action selector="vistoTodosEnd:" destination="V5k-21-Meb" eventType="editingDidEnd" id="klq-z9-5mi"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data de  nascimento" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D9T-hd-sck">
                                                 <rect key="frame" x="44" y="288" width="107" height="12"/>
@@ -643,6 +653,10 @@
                                                 <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                <connections>
+                                                    <action selector="changedTextFields:" destination="V5k-21-Meb" eventType="editingDidEnd" id="Ohl-yg-CYb"/>
+                                                    <action selector="vistoTodosEnd:" destination="V5k-21-Meb" eventType="editingDidEnd" id="7Kd-BA-Zgo"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zMa-gd-pc6">
                                                 <rect key="frame" x="44" y="375" width="35" height="13"/>
@@ -664,6 +678,10 @@
                                                 <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" keyboardType="emailAddress" textContentType="email"/>
+                                                <connections>
+                                                    <action selector="changedTextFields:" destination="V5k-21-Meb" eventType="editingDidEnd" id="wGM-BH-OWp"/>
+                                                    <action selector="vistoTodosEnd:" destination="V5k-21-Meb" eventType="editingDidEnd" id="ttj-DE-C02"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmar E-mail" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B1l-Px-8Gk">
                                                 <rect key="frame" x="44" y="465" width="89" height="13"/>
@@ -685,6 +703,10 @@
                                                 <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                <connections>
+                                                    <action selector="changedTextFields:" destination="V5k-21-Meb" eventType="editingDidEnd" id="bi2-zr-ygj"/>
+                                                    <action selector="vistoTodosEnd:" destination="V5k-21-Meb" eventType="editingDidEnd" id="hlf-bG-imz"/>
+                                                </connections>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirmar senha" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="70g-VK-1fl">
                                                 <rect key="frame" x="29" y="652" width="317" height="55"/>
@@ -695,6 +717,10 @@
                                                 <color key="textColor" red="0.27450980390000002" green="0.27450980390000002" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                <connections>
+                                                    <action selector="changedTextFields:" destination="V5k-21-Meb" eventType="editingDidEnd" id="cRe-ZF-wfL"/>
+                                                    <action selector="vistoTodosEnd:" destination="V5k-21-Meb" eventType="editingDidEnd" id="Lqe-ee-orw"/>
+                                                </connections>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirmar senha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ro2-Wz-SN6">
                                                 <rect key="frame" x="44" y="644" width="90" height="12"/>
@@ -975,7 +1001,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6sx-TJ-7gM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10393" y="-2547"/>
+            <point key="canvasLocation" x="-9761" y="-2771"/>
         </scene>
         <!--Reset Password-->
         <scene sceneID="6ZU-dS-Eky">
@@ -1247,6 +1273,11 @@
                                         <color key="value" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="checkPasswordCpf:" destination="rZH-xz-D7G" eventType="editingDidEnd" id="XGq-Zj-zAQ"/>
+                                    <action selector="clearCpf:" destination="rZH-xz-D7G" eventType="editingDidBegin" id="CnX-pf-ynT"/>
+                                    <action selector="forgotPasswordAndCpfClose:" destination="rZH-xz-D7G" eventType="editingChanged" id="muf-zN-7a8"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Senha" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="Dqy-XG-KIV">
                                 <rect key="frame" x="68" y="372" width="249" height="56"/>
@@ -1265,6 +1296,10 @@
                                         <color key="value" red="0.30980392159999998" green="0.30980392159999998" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="checkPasswordCpf:" destination="rZH-xz-D7G" eventType="editingDidEnd" id="yF1-O6-6ZK"/>
+                                    <action selector="forgotPasswordAndCpfClose:" destination="rZH-xz-D7G" eventType="editingChanged" id="Sgo-sK-F9P"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gHA-Jf-Yw9">
                                 <rect key="frame" x="68" y="460" width="249" height="40"/>
@@ -1371,11 +1406,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HtG-vX-BVR" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10204" y="-3529"/>
+            <point key="canvasLocation" x="-10074" y="-3529"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="G5a-6T-WI9"/>
+        <segue reference="8es-kQ-5La"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="anterior" width="24" height="24"/>

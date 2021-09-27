@@ -164,10 +164,10 @@
 		47F7D43926EF91D500BC594B /* Desafio W.Dental */ = {
 			isa = PBXGroup;
 			children = (
-				474A216226F8EC1800B0742F /* view model */,
 				474A216126F8EC1000B0742F /* model */,
-				474A215F26F8EBAC00B0742F /* service */,
 				47B89CF426F13A10008494D9 /* view */,
+				474A216226F8EC1800B0742F /* view model */,
+				474A215F26F8EBAC00B0742F /* service */,
 				47F7D43C26EF91D500BC594B /* SceneDelegate.swift */,
 				47F7D43A26EF91D500BC594B /* AppDelegate.swift */,
 				47F7D44826EF91D600BC594B /* Info.plist */,
